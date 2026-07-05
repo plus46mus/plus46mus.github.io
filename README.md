@@ -3,40 +3,7 @@
 <figure>
   <figcaption>Felt</figcaption>
   <audio controls src="/felt.mp3"></audio>
-  <a href="felt.mp3"> Download audio </a>
 </figure>
-
-// Source - https://stackoverflow.com/a/40279892
-// Posted by Justinas
-// Retrieved 2026-07-05, License - CC BY-SA 3.0
-
-$(document).ready(function() {
-
-  $('#selection').on('change', function() {
-    change($(this).val());
-  });
-
-});
-
-
-function change(sourceUrl) {
-  var audio = document.getElementById("player");
-  var source = document.getElementById("mp3_src");
-
-  audio.pause();
-
-  if (sourceUrl) {
-    source.src = sourceUrl;
-    audio.load();
-    audio.play();
-  }
-}
-
-<!--
-Source - https://stackoverflow.com/a/40279892
-Posted by Justinas
-Retrieved 2026-07-05, License - CC BY-SA 3.0
--->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
