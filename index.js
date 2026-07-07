@@ -2,7 +2,7 @@ let character = document.getElementById("character");
 let game = document.getElementById("game");
 let both = 0;
 let interval;
-let speed = 2;
+let speed = 1;
 
 function speedBoost() {
     speed = 4;
@@ -49,12 +49,6 @@ document.addEventListener("keydown",  event => {
         if(event.key === "s"){
             interval = setInterval(moveDown, 1);
         }
-    }
-    if(event.key === "e"){
-        speedBoost();
-    }
-    if(event.key === "q"){
-        speedDown();
     }
 });
 document.addEventListener("keyup", () => {
