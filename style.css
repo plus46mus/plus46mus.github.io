@@ -3,12 +3,12 @@
     margin: 0px;
 }
 body {
-    background-color: black;
+    background-color: white;
 }
 #game {
     width: 1920px;
     height: 1080px;
-    background-color: coral;
+    background-color: white;
     border: 3px solid rgb(255, 255, 255);
     margin: auto;
     position: absolute;
